@@ -1,0 +1,320 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      list-style: none;
+    }
+    
+    body {
+      font-family: 'Raleway', sans-serif;
+      color: #252525;
+      background-color: #fafafa;
+    }
+
+    @font-face {
+        font-family: 'Bebas_Bold';
+        src: url("../fonts/BebasNeue Bold.otf") format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'bebas_neueregular';
+        src: url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+             url('../fonts/bebasneue_regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;    
+    }
+
+
+/*========================================= H E A D E R =========================================*/
+
+    
+    .flex-header {
+      display: flex;
+      display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+      display: -ms-flexbox;  /* TWEENER - IE 10 */
+      display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1.8em 1.8em 1.8em;
+    }
+    
+    .nav_items {
+      display: block;
+      font-family: bebas_neueregular, sans-serif;
+      font-size: 1.5em;
+      text-align: center;
+      border-top: 1px solid #ccc;
+      box-shadow: 0 1px #ccc;
+      letter-spacing: 2px;
+    }
+    
+    header nav a {
+      padding: 12px;
+      color: #515151;
+    }
+    
+    nav a:active {
+      color: #333;
+    }
+    
+    header nav {
+      overflow: hidden;
+      height: 305px;
+      transition-duration: 1s;
+    }
+    
+    .collapse {
+      height: 0;
+    }
+    
+    header, #intro, a {
+      text-transform: uppercase;
+    }
+    
+    #menu-icon {
+      font-size: 2em;
+    }
+    
+    #menu-icon,
+    #menu-icon:visited,
+    #menu-icon:active {
+      color: inherit;
+    }
+    
+/*================================ bg image ==============================================*/
+        
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+      /*position: relative;*/
+      opacity: 0.9;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    
+    }
+    .bgimg-1 {
+      background-image: url("../img/banner_01.jpg");
+      min-height: 100vh;
+    }
+    
+    .bgimg-2 {
+      background-image: url("../img/banner_02.jpg");
+      min-height: 500px;
+    }
+    
+    .bgimg-3 {
+      background-image: url("../img/banner_03.jpg");
+      min-height: 400px;
+    }
+
+    .bgimg-4 {
+      background-image: url("../img/banner_04.jpg");
+      min-height: 400px;
+    }
+
+    /*================================ A B O U T   U S ==============================================*/
+
+    section {
+      padding: 80px 20px;
+    }
+
+    .art_header {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: Bebas_Bold, sans-serif;
+      font-size: 42px;
+      letter-spacing: 3px;
+    }
+
+    mark {
+      color: #FAFAFA;
+      background-color: #252525;
+      padding: 0px 7px;
+    }
+
+    .p_container {
+      display: flex;
+      display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+      display: -ms-flexbox;  /* TWEENER - IE 10 */
+      display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 50px;
+      text-align: center;
+    }
+
+    .art1_p {
+      padding: 30px 20px;
+      font-weight: 500;
+    }
+
+    .p_txt {
+      line-height: 23px;
+      letter-spacing: 1px;
+    }
+
+    .txt_shadow {
+      box-shadow: 0 1px #ccc;
+    }
+
+    /*================================ WHAT WE DO ==============================================*/
+
+    .art2_p {
+      line-height: 23px;
+      letter-spacing: 1px;
+      padding-top: 80px;
+      text-align: center;
+    }
+
+    /*================================ INDUSTRIES WE SERVE ==============================================*/
+
+    .ind-we-pad {
+      padding-right: 4px;
+    }
+
+    .serve-pad {
+      padding-left: 7px;
+    }
+
+    .industries_container {
+      margin-top: 50px;
+      display: flex;
+      display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+      display: -ms-flexbox;  /* TWEENER - IE 10 */
+      display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */      
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .industries_items {
+      padding: 20px  0 20px 30px;
+      display: flex;
+      display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+      display: -ms-flexbox;  /* TWEENER - IE 10 */
+      display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      height: 250px;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: #4F4F4F;
+      padding-left: 20px;
+      width: 150px;
+    }
+
+    .icons {
+      width: 80px;
+      opacity: 0.3;
+    }
+
+    /*================================ OUR APPROACHES & TOOLS ==============================================*/
+
+    .art3_col {
+      background-color: #FDE8E5;  
+    }
+    
+    .sub-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 19px;
+      font-weight: 700;
+      padding-top:50px;
+      letter-spacing: 2px;
+      color: #2A2A2A; 
+    }
+
+    .list-container {
+      padding-top: 40px; 
+      display: flex;
+      display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+      display: -ms-flexbox;  /* TWEENER - IE 10 */
+      display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .list-items {
+      min-height: 70px;
+      padding: 20px 0;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      color: #B32352;
+    }
+
+    .our-app {
+      padding-right: 7px;
+    }
+
+    .tools {
+      padding-left: 7px;
+    }
+
+    /*================================ F O O T E R ==============================================*/
+
+
+    .footer-h1 {
+      padding-top: 60px;
+    }
+
+    .contact {
+      font-weight: 700;
+      text-align: center;
+      padding: 30px;
+      letter-spacing: 1px;
+      font-size: 20px;
+    }
+
+    .site-end {
+      height: 30px;
+      background-color: #191919;
+    }
+
+    .button-top {
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.5);
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+      z-index: 10;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+    }
+
+    .button-top.button-fixed {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .copyright {
+      display: inline-block;
+      position: absolute;
+      right: 25px;
+      font-size: 13px;
+      margin-top: 10px;
+      opacity: 0.6;
+    }
+
+    .copylink {
+      text-transform: inherit;
+    }
+
+    .copylink:visited {
+      color: inherit;
+    }
+
+    .copylink:link {
+      color: inherit;
+    }

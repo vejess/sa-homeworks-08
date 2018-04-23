@@ -1,0 +1,168 @@
+
+  #menu-icon {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+    height: 130px;
+    margin: auto;
+  }
+
+  .flex-header {
+    align-self: flex-start;
+  }
+
+  .nav_container {
+    display: flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    padding-right: 1.8em;
+  }
+
+  header nav, .collapse {
+    height: auto;
+    overflow: visible;
+  }
+
+  .nav_items {
+    margin: 10px;
+    letter-spacing: 1px;
+    color: #343434;
+    border: 0;
+    box-shadow: inset 0 0 0 0 #31302B;
+    -webkit-transition: all ease 0.7s;
+    -moz-transition: all ease 0.7s;
+    transition: all ease 0.4s;
+  }
+
+  .nav_items:hover {
+    box-shadow: inset 230px 0 0 0 #252525;
+    color: #fafafa;
+  }
+
+  .nav_container li:last-child a {
+    margin-right: 0;
+  }
+
+  .brand {
+    align-self: flex-start;
+  }
+
+  /*================================ A B O U T   U S ==============================================*/
+
+  .p_container {
+    flex-direction: row;
+    padding-top: 80px;
+    max-width: 1300px;
+    margin: auto;
+  }
+
+  .art1_p {
+    padding: 0 20px;
+    max-width: 300px;
+    box-shadow: none;
+    text-align: left;
+  }
+
+  /*================================ WHAT WE DO ==============================================*/
+
+  .art2_p {
+    margin: auto;
+    max-width: 800px;
+  }
+
+  /*================================ INDUSTRIES WE SERVE ==============================================*/
+
+  .ind-we-pad {
+    padding-right: 0px;
+  }
+
+  .serve-pad {
+    padding-left: 0px;
+  }
+
+  .industries_container {
+    margin: auto;
+    flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 950px;
+  }
+
+  .industries_items {
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+  }
+
+  h4 {
+    padding-left: 0px;
+    padding-top:30px;
+    width: 150px;
+    text-align: center;
+  }
+
+  .icons {
+    width: 80px;
+    opacity: 0.3;
+  }
+
+  /*================================ OUR APPROACHES & TOOLS ==============================================*/
+
+  .list-container {
+    text-align: left;
+  }
+
+  .list-items {
+    min-height: 70px;
+    padding: 20px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #B32352;
+  }
+
+  .our-app {
+    padding-right: 0px;
+  }
+
+  .tools {
+    padding-left: 0px;
+  }
+
+  /*------------------------------------------------*/
+
+  .list-container {
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    max-width: 900px;
+  }
+
+  .list-items {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #B32352;
+    min-height: initial;
+  }
+
+  .last {
+    padding: 14px;
+  }
+
+}
